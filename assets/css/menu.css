@@ -1,0 +1,86 @@
+body {
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+}
+
+nav {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888;
+    display: block;
+    margin: 8px 22px 8px 22px;
+    overflow: hidden;
+    width: 90%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+ 
+nav ul li {
+   display: inline-block;
+   list-style-type: none; 
+   -webkit-transition: all 0.2s;
+   -moz-transition: all 0.2s;
+   -ms-transition: all 0.2s;
+   -o-transition: all 0.2s;
+   transition: all 0.2s;
+  
+}
+ 
+nav > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 56px;
+    padding: 0 24px;
+    text-decoration: none;
+}
+
+nav > ul > li:hover {
+  background-color: rgb( 40, 44, 47 );
+}
+ 
+nav > ul > li:hover > a {
+  color: rgb( 255, 255, 255 );
+}
+ 
+nav > ul > li:hover > a > .caret {
+  border-top-color: rgb( 255, 255, 255 );
+}
+
+.alapanyagok {
+  list-style: none;
+  margin-left: 1em;
+  counter-reset: line;
+}
+
+.alapanyagok > li:before {
+	position: absolute;
+	left: -2.25em;
+	display: inline-block;
+  width: 22px;
+	height: 22px;
+	margin-right: 0.5em;
+  background-color: #B53C2C;
+	border-radius: 50%;
+	color: #fff;
+	text-align:center;
+  line-height: 1.25em;
+	counter-increment: line;
+	content: counter(line);
+}
+
+.elkeszites {
+  width:95%;
+  height:60%;
+  overflow:auto;
+}
+
+.hozzavalofield {
+  length:200px;
+}
