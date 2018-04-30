@@ -6,3 +6,4 @@ if ($connecttodb->query($sql) === TRUE) utan atiranyitas a recept oldalara
 url sql be kerulese elott cross iste script elkerulese
 leglatogatobb a fooldalra
 legutobbi a fooldalra
+Cstalakozasok bezarasa mysql lekeresek utan 
