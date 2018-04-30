@@ -13,7 +13,7 @@ nav {
     display: block;
     margin: 8px 22px 8px 22px;
     overflow: hidden;
-    width: 90%;
+    padding: 10px;
 }
 
 nav ul {
@@ -56,7 +56,7 @@ nav > ul > li:hover > a > .caret {
 .alapanyagok {
   list-style: none;
   margin-left: 1em;
-  counter-reset: line;
+  counter-reset: line; 
 }
 
 .alapanyagok > li:before {
@@ -77,10 +77,21 @@ nav > ul > li:hover > a > .caret {
 
 .elkeszites {
   width:95%;
-  height:60%;
+  height:auto;
+  padding:0px;
   overflow:auto;
 }
 
 .hozzavalofield {
   length:200px;
+}
+
+.posmessage {
+    background-color: #fff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.055);
+    color: #888;
+    margin: 8px 22px 8px 22px;
+    font-size: 50px;
 }
