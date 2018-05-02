@@ -8,7 +8,7 @@ $(document).ready(function() {
         e.preventDefault();
         if(x < max_fields){ //max input box allowed
             x++; //text box increment
-            $(wrapper).append('<div >Hozz&#x00E1;val&#x00F3;: <input type="text" name="mytext[]"/><a href="#" class="remove_field">Elt&#x00E1;vol&#x00ED;t</a></div>'); //add input box
+            $(wrapper).append('<div >Hozz&#x00E1;val&#x00F3;: <input type="text" name="hozzavalo[]"/><a href="#" class="remove_field">Elt&#x00E1;vol&#x00ED;t</a></div>'); //add input box
         }
     });
     
