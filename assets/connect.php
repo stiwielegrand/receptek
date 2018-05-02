@@ -1,8 +1,8 @@
 <?php
 
 $servername="localhost";
-$username="username";
-$password="12345";
+$username="root";
+$password="";
 
 //new connection 
 $connect = new mysqli($servername, $username, $password);
@@ -11,6 +11,6 @@ $connect = new mysqli($servername, $username, $password);
 if ($connect->connect_error) {
   die("Connection failed: ".$connect->connect_error);
 }
-echo "Connected sucessfully";
+// TEST echo "Connected sucessfully<br><br>";
 
 ?>

@@ -2,8 +2,12 @@
 
 include 'connect.php';
 
+$servername="localhost";
+$username="root";
+$password="";
+$db = "receptek";
 
-//create new db
+ /* create new db
 $sql ="CREATE DATABASE receptek";
 
 if ($connect->query($sql) === TRUE) {
@@ -16,26 +20,43 @@ if ($connect->query($sql) === TRUE) {
 
 $connect ->close();
 
+*/
+
 //crate a table
 
-$connecttodb = new mysqli($servername, $username, $password, "receptek");
+$connecttodb = new mysqli($servername, $username, $password, $db);
 
-
-//STUCK HERE!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-$sqltable = "CREATE TABLE MyGuests (
+$sqltable = "CREATE TABLE recepttar (
 id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY, 
-firstname VARCHAR(30) NOT NULL,
-lastname VARCHAR(30) NOT NULL,
-email VARCHAR(50),
-reg_date TIMESTAMP
+receptnev VARCHAR(50) NOT NULL,
+recepttipus VARCHAR(50) NOT NULL,
+leiras TEXT,
+foto VARCHAR(1000),
+comment TEXT,
+elkeszites TEXT, 
+alapanyag1 TEXT,
+alapanyag2 TEXT,
+alapanyag3 TEXT,
+alapanyag4 TEXT,
+alapanyag5 TEXT,
+alapanyag6 TEXT,
+alapanyag7 TEXT,
+alapanyag8 TEXT,
+alapanyag9 TEXT,
+alapanyag10 TEXT,
+alapanyag11 TEXT,
+alapanyag12 TEXT,
+alapanyag13 TEXT,
+alapanyag14 TEXT,
+alapanyag15 TEXT
 )";
 
-if ($connect->query($sqltable) === TRUE) {
+if ($connecttodb->query($sqltable) === TRUE) {
   echo "Table created";
   }
   else
   {
-    echo "Error table creation". $connect->error;  
+    echo "Error table creation - ". $connect->error;  
   }
 
 
